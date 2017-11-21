@@ -1,11 +1,14 @@
 html, body {
   font-family: Helvetica;
   font-size: 22px;
+  font-weight: bold;
   color: seashell;
   background-color: black;
   opacity:0.9;
   text-align: center;
 }
+
+/* header */
 
 header {
   height: 69px;
@@ -18,29 +21,37 @@ header {
   align-items: center;
   overflow: hidden;
   top: 0;
+  z-index: 1;
   }
 
 header .logo {
   margin-left: 10px;
+  height: 50px;
 }
 
 nav a {
   text-decoration: underline;
   color: seashell;
   display: inline-block;
-  justify-content:
+  justify-content: center;
   text-align: center;
   padding: 14px 16px;
   margin-right: 10px;
 }
+
+/* main */
+
 main {
   margin-top: 69px;
   width: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+/* mission */
 
 .mission {
   background-image: url("../images/img-mission-background.jpg");
@@ -53,23 +64,26 @@ main {
 
 .article {
   background-color: black;
-  width: 1200px;
+  width: 100%;
   align-items: center;
   }
 
-  .featuredtea {
-    width: 1000px;
-    border: 1px solid white;
-    padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* featured tea */
+
+.featuredtea {
+  width: 1200px;
+  border: 1px solid white;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   }
 
 .images {
   border: 1px solid red;
-  flex-basis: 33%;
+  padding-right: 25px;
+  padding-left: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -77,14 +91,24 @@ main {
   flex-wrap: wrap;
 }
 
-  figure {
+figure {
+  flex-basis: 300px;
+  padding-left:
+}
+
+.images  img {
     border: 1px solid white;
+
 
   }
 
   figcaption {
     padding-top: 10px;
+    border: 1px solid black;
+    text-align: center;
   }
+
+/* locations */
 
   .locations {
     background-image: url("../images/img-locations-background.jpg");
@@ -113,7 +137,10 @@ main {
     background-color: black;
     width: 300px;
     margin-right: 40px;
+    opacity: 1;
   }
+
+/* footer */
 
   .contact {
     height: 200px;

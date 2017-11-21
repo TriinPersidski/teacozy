@@ -4,8 +4,9 @@ html, body {
   font-weight: bold;
   color: seashell;
   background-color: black;
-  opacity:0.9;
+  opacity: 0.9;
   text-align: center;
+  margin: 0;
 }
 
 /* header */
@@ -51,7 +52,7 @@ main {
   align-items: center;
 }
 
-/* mission */
+/* section mission */
 
 .mission {
   background-image: url("../images/img-mission-background.jpg");
@@ -68,12 +69,12 @@ main {
   align-items: center;
   }
 
-/* featured tea */
+/* section featured tea */
 
 .featuredtea {
-  width: 1200px;
-  border: 1px solid white;
-  padding: 100px 0px;
+  width: 1050px;
+  height: auto;
+  padding: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,36 +82,33 @@ main {
   }
 
 .images {
-  border: 1px solid red;
-  padding-right: 25px;
-  padding-left: 25px;
+  border: 0px solid red;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  align-content: space-between;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 figure {
-  flex-basis: 300px;
-  padding-left:
+  margin: 0px;
+  padding: 20px 25px;
 }
 
-.images  img {
-    border: 1px solid white;
+figcaption {
+  padding-top: 10px;
+  text-align: center;
+}
 
+/* section locations */
 
-  }
-
-  figcaption {
-    padding-top: 10px;
-    border: 1px solid black;
-    text-align: center;
-  }
-
-/* locations */
-
-  .locations {
+.locations {
     background-image: url("../images/img-locations-background.jpg");
     height: 500px;
     width: 1200px;
@@ -120,26 +118,55 @@ figure {
     align-items: center;
   }
 
-  .locations h2 {
+  .headline h2 {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
   }
 
   .column {
+    border: 0px solid red;
+    width: 980px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
   }
 
   .col {
     background-color: black;
     width: 300px;
-    margin-right: 40px;
     opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
+.col #col-1 {
+    padding: 0px 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    height: 316px;
+  }
+
+.col  #col-2 {
+    padding: 0px 10px;
+    margin: 0px 20px;
+    height: 316px;
+}
+
+.col #col-3 {
+    padding: 0px 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+    height: 316px;
+
+}
 /* footer */
 
   .contact {

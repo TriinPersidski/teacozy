@@ -7,174 +7,153 @@ html, body {
   opacity: 0.9;
   text-align: center;
   margin: 0;
+  height: 100%;
+}
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
 }
 
 /* header */
 
 header {
-  height: 69px;
+  height: 3.14rem;
   width: 100%;
   border-bottom: 1px solid seashell;
   background-color: black;
   position: fixed;
-  display: flex;
-  justify-content: space-between;
+
   align-items: center;
   overflow: hidden;
   top: 0;
   z-index: 1;
   }
 
-header .logo {
-  margin-left: 10px;
-  height: 50px;
+header img {
+  padding-left: 0.45rem;
+  height: 2.27rem;
 }
 
+nav {
+  text-align: right;
+  flex: 1;
+}
+
+nav span {
+  display: inline-block;
+  padding: 0.63rem 0.73rem;
+}
 nav a {
   text-decoration: underline;
   color: seashell;
-  display: inline-block;
-  justify-content: center;
-  text-align: center;
-  padding: 14px 16px;
-  margin-right: 10px;
+}
+
+a:hover {
+  color: red;
 }
 
 /* main */
 
 main {
-  margin-top: 69px;
-  width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap row;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
 
 /* section mission */
 
-.mission {
+#mission {
   background-image: url("../images/img-mission-background.jpg");
-  height: 700px;
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.article {
-  background-color: black;
-  width: 100%;
-  align-items: center;
+  height: 31.82rem;
+  margin-top: 3.14rem;
   }
+
+#mission .content {
+  width: 100%;
+  margin: auto;
+  background-color: black;
+}
 
 /* section featured tea */
 
-.featuredtea {
-  width: 1050px;
-  height: auto;
-  padding: 75px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+#featuredtea {
+  margin: auto;
+  padding-top: 3rem;
+  width: 84%;
+  height: 31.8rem;
   }
 
-.images {
-  border: 0px solid red;
-  padding-right: 0px;
-  padding-left: 0px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: space-between;
-  margin-left: 0px;
-  margin-right: 0px;
+.items img {
+  width: 300px;
+  height: 200px;
+  display: block;
+
 }
 
 figure {
-  margin: 0px;
-  padding: 20px 25px;
-}
+  padding: 1.7% 3.3%;
+  width: 26%;
+  margin: 0;
+  }
+
 
 figcaption {
-  padding-top: 10px;
+  padding-top: 3.3%;
   text-align: center;
 }
 
 /* section locations */
 
-.locations {
-    background-image: url("../images/img-locations-background.jpg");
-    height: 500px;
-    width: 1200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#locations {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 22.7rem;
+  padding-top: 3rem;
   }
 
-  .headline h2 {
-    text-align: center;
-    padding-bottom: 0px;
-    margin-bottom: 15px;
-  }
-
-  .column {
-    border: 0px solid red;
-    width: 980px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .col {
-    background-color: black;
-    width: 300px;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-.col #col-1 {
-    padding: 0px 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 20px;
-    height: 316px;
-  }
-
-.col  #col-2 {
-    padding: 0px 10px;
-    margin: 0px 20px;
-    height: 316px;
+#locations .flex-container {
+  margin: auto;
+  width: 100%;
 }
 
-.col #col-3 {
-    padding: 0px 10px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 20px;
-    height: 316px;
-
+.flex-container .locations {
+  padding-top: 5px;
 }
+
+.location {
+  background-color: black;
+  margin: auto 1.67%;
+  padding: 1.67% 1.25%;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 25%;
+  }
+
+/* contact section */
+
+#contact {
+  margin: auto;
+  height: 9rem;
+  width: 100%;
+  padding-bottom: 0.4%;
+  }
+
 /* footer */
 
-  .contact {
-    height: 200px;
-    text-align: center;
-  }
-
-  .copyright {
-    text-align: left;
-    padding-left: 20px;
+footer {
+  width: 100%;
+  text-align: left;
+  padding-left: 1.67%;
   }

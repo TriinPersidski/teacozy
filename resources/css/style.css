@@ -6,8 +6,12 @@ html, body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
-  margin: 0;
-  height: 100%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+body {
+  height:100%;
 }
 
 h2, h3, h4 {
@@ -23,7 +27,6 @@ header {
   border-bottom: 1px solid seashell;
   background-color: black;
   position: fixed;
-
   align-items: center;
   overflow: hidden;
   top: 0;
@@ -33,6 +36,9 @@ header {
 header img {
   padding-left: 0.45rem;
   height: 2.27rem;
+  width: auto;
+  display: inline-block;
+  position: relative;
 }
 
 nav {
@@ -77,6 +83,8 @@ main {
   background-image: url("../images/img-mission-background.jpg");
   height: 31.82rem;
   margin-top: 3.14rem;
+  margin: auto;
+  line-height: normal;
   }
 
 #mission .content {
@@ -94,22 +102,34 @@ main {
   height: 31.8rem;
   }
 
+  .clearfix {
+    clear: both;
+  }
+
+.flex-container .items {
+  overflow: hidden;
+  margin-top: auto;
+
+  }
+
 .items img {
   width: 300px;
-  height: 200px;
   display: block;
-
-}
+  height: auto;
+  max-width: 100%;
+  }
 
 figure {
   padding: 1.7% 3.3%;
   width: 26%;
   margin: 0;
+  float: left;
   }
 
 
 figcaption {
   padding-top: 3.3%;
+  padding-bottom: 10%;
   text-align: center;
 }
 
@@ -127,7 +147,7 @@ figcaption {
 }
 
 .flex-container .locations {
-  padding-top: 5px;
+  padding-top: 1%;
 }
 
 .location {
@@ -156,4 +176,66 @@ footer {
   width: 100%;
   text-align: left;
   padding-left: 1.67%;
+  }
+
+/* media queries */
+/* IPhone */
+
+@media only screen and (max-width: 480px), (orientation: portrait) {
+  #mission {
+    width: 270px;
+    margin: auto;
+    height: 400px;
+    margin-top: 68px;
+    }
+    .content {
+      text-align: center;
+      opacity: 0.7;
+      margin: 0;
+    }
+}
+
+/* media queries not right*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .flex-container .items {
+    width: 50%;
+    height: auto;
+  }
+  .content, #featuredtea {
+    display: flex;
+    flex-flow: row;
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-resolution: 100dpi) and (max-width: 480px)  {
+  h1 h2 {
+    font-size: 16px;
+  }
+  h3 h4 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content, #featuredtea {
+    width: 50%;
+    height: auto;
+  }
+
+  #featuredtea {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #mission .content {
+    font-size: 1rem;
+  }
+  figure {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
   }
